@@ -1,0 +1,79 @@
+/**:
+  ros__parameters:
+
+    use_sim_time: true
+
+    # --- Topics (adapted for your simulation) ---
+    pointCloudTopic: "/scan_points_fixed"        # from slam_ws (FAST-LIO2 / fixers)
+    imuTopic: "/livox/imu_fixed"                 # from imu_frame_fix.py
+    odomTopic: "/odometry/imu"                    # internal IMU preintegration odometry
+    gpsTopic: "odometry/gpsz"                    # unused (no GPS)
+
+    # --- Frames ---
+    lidarFrame: "lidar_link"
+    baselinkFrame: "base_link"
+    odometryFrame: "odom"
+    mapFrame: "map"
+
+    # --- Sensor type ---
+    sensor: livox                                # your simulated sensor
+    N_SCAN: 6                                    # Livox Horizon/Mid-360 equivalent
+    Horizon_SCAN: 4000
+    downsampleRate: 1
+    lidarMinRange: 0.15
+    lidarMaxRange: 100.0
+
+    # --- IMU Settings ---
+    imuAccNoise: 3.9939570888238808e-03
+    imuGyrNoise: 1.5636343949698187e-03
+    imuAccBiasN: 6.4356659353532566e-05
+    imuGyrBiasN: 3.5640318696367613e-05
+    imuGravity: 9.80511
+    imuRPYWeight: 0.01
+
+        # --- Additional LIO-SAM flags ---
+    publishFullOdom: true
+    timeSync: false
+    imuQueueLength: 2000
+
+
+    # Extrinsics: lidar↔imu roughly aligned
+    extrinsicTrans: [ -0.011, -0.02329, 0.04412 ]
+    extrinsicRot:   [ 1.0, 0.0, 0.0,
+                      0.0, 1.0, 0.0,
+                      0.0, 0.0, 1.0 ]
+    extrinsicRPY:   [ 0.0, 1.0, 0.0,
+                     -1.0, 0.0, 0.0,
+                      0.0, 0.0, 1.0 ]
+
+    # --- Key thresholds ---
+    edgeThreshold: 1.0
+    surfThreshold: 0.1
+    edgeFeatureMinValidNum: 10
+    surfFeatureMinValidNum: 100
+
+    # --- Mapping / optimization ---
+    odometrySurfLeafSize: 0.4
+    mappingCornerLeafSize: 0.2
+    mappingSurfLeafSize: 0.4
+    numberOfCores: 4
+    mappingProcessInterval: 0.15
+    z_tollerance: 1000.0
+    rotation_tollerance: 1000.0
+
+    # --- Loop closure ---
+    loopClosureEnableFlag: true
+    loopClosureFrequency: 1.0
+    surroundingKeyframeSearchRadius: 50.0
+    historyKeyframeSearchRadius: 15.0
+    historyKeyframeSearchTimeDiff: 30.0
+    historyKeyframeFitnessScore: 0.3
+
+    # --- Visualization ---
+    globalMapVisualizationSearchRadius: 100.0
+    globalMapVisualizationPoseDensity: 10.0
+    globalMapVisualizationLeafSize: 1.0
+
+    # --- Export ---
+    savePCD: false
+    savePCDDirectory: "/tmp/lio_sam_map/"

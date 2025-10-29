@@ -1,0 +1,101 @@
+# ================================================================
+# LIO-SAM Simulation RViz Configuration
+# Automatically loaded by mapping_livox_sim.launch.py
+# ================================================================
+
+Visualization Manager:
+  Global Options:
+    Fixed Frame: map
+    Background Color: 48;48;48
+    Frame Rate: 30
+  Displays:
+  - Name: TF
+    Class: rviz_default_plugins/TF
+    Enabled: true
+
+  - Name: Drone Axes
+    Class: rviz_default_plugins/Axes
+    Enabled: true
+    Length: 1.0
+    Radius: 0.02
+
+  - Name: Map Cloud
+    Class: rviz_default_plugins/PointCloud2
+    Enabled: true
+    Topic: /lio_sam/mapping/cloud_registered
+    Color Transformer: Intensity
+    Style: Flat Squares
+    Size (Pixels): 2
+    Queue Size: 10
+    Use rainbow: true
+
+  - Name: Local Cloud
+    Class: rviz_default_plugins/PointCloud2
+    Enabled: false
+    Topic: /lio_sam/mapping/cloud_registered_raw
+    Color Transformer: Intensity
+    Size (Pixels): 1
+    Style: Points
+
+  - Name: Raw LiDAR
+    Class: rviz_default_plugins/PointCloud2
+    Enabled: false
+    Topic: /scan_points_fixed
+    Color Transformer: FlatColor
+    Size (Pixels): 1
+    Style: Points
+
+  - Name: Path
+    Class: rviz_default_plugins/Path
+    Enabled: true
+    Topic: /lio_sam/mapping/path
+    Color: 255;25;25
+    Line Style: Lines
+    Line Width: 0.1
+
+  - Name: Odometry
+    Class: rviz_default_plugins/Odometry
+    Enabled: true
+    Topic: /lio_sam/mapping/odometry
+    Color: 25;255;25
+    Axes Length: 0.6
+    Axes Radius: 0.03
+
+  - Name: IMU Odometry Incremental
+    Class: rviz_default_plugins/Odometry
+    Enabled: false
+    Topic: /odometry/imu_incremental
+    Color: 25;200;255
+    Axes Length: 0.3
+    Axes Radius: 0.02
+
+  - Name: Global Map (loop closure)
+    Class: rviz_default_plugins/PointCloud2
+    Enabled: false
+    Topic: /lio_sam/mapping/map_global
+    Color Transformer: FlatColor
+    Size (Pixels): 1
+    Style: Points
+
+  - Name: Loop Closures
+    Class: rviz_default_plugins/MarkerArray
+    Enabled: false
+    Topic: /lio_sam/mapping/loop_closure_constraints
+
+  - Name: Current Pose Text
+    Class: rviz_default_plugins/Marker
+    Enabled: false
+    Topic: /lio_sam/mapping/current_pose_marker
+
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Target Frame: map
+      Distance: 30
+      Pitch: 0.5
+      Yaw: 1.5
+      Near Clip Distance: 0.01
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
