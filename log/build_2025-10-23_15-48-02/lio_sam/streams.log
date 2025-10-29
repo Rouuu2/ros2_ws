@@ -1,0 +1,282 @@
+[0.009s] Invoking command in '/home/skander/ros2_ws/build/lio_sam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/skander/slam_ws/install/slam_diagnostic:/home/skander/slam_ws/install/sim_utils:/home/skander/slam_ws/install/match_launch:/home/skander/slam_ws/install/match_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/skander/ros2_ws/src/LIO-SAM -DCMAKE_INSTALL_PREFIX=/home/skander/ros2_ws/install/lio_sam
+[0.023s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.046s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.105s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.114s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.119s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.156s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.182s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.184s] -- Found rclcpp: 28.1.12 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.241s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.243s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.302s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.357s] -- Found rclpy: 7.1.5 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.357s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.369s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.400s] -- Found nav_msgs: 5.3.6 (/opt/ros/jazzy/share/nav_msgs/cmake)
+[0.421s] -- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[0.444s] -- Found tf2: 0.36.14 (/opt/ros/jazzy/share/tf2/cmake)
+[0.447s] -- Found tf2_geometry_msgs: 0.36.14 (/opt/ros/jazzy/share/tf2_geometry_msgs/cmake)
+[0.450s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[0.451s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.544s] -- Found tf2_sensor_msgs: 0.36.14 (/opt/ros/jazzy/share/tf2_sensor_msgs/cmake)
+[0.547s] -- Found tf2_eigen: 0.36.14 (/opt/ros/jazzy/share/tf2_eigen/cmake)
+[0.550s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[0.576s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found suitable version "1.83.0", minimum required is "1.65.0") found components: system filesystem iostreams serialization 
+[0.577s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):
+[0.577s]   Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+[0.578s]   variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+[0.578s]   cmake_policy command to set the policy and suppress this warning.
+[0.578s] 
+[0.578s]   CMake variable FLANN_ROOT is set to:
+[0.578s] 
+[0.578s]     /usr
+[0.578s] 
+[0.578s]   For compatibility, find_package is ignoring the variable, but code in a
+[0.578s]   .cmake module might still use it.
+[0.578s] Call Stack (most recent call first):
+[0.578s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)
+[0.578s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)
+[0.578s]   /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)
+[0.578s]   CMakeLists.txt:39 (find_package)
+[0.578s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.578s] [0m
+[0.578s] -- Found flann version 1.9.2
+[0.580s] -- Found OpenMP: TRUE (found version "4.5") found components: CXX 
+[0.749s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[0.941s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.947s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.951s] -- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) 
+[0.951s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[1.319s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.324s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.673s] -- Found Qhull version 8.0.2
+[2.004s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.323s] -- looking for PCL_COMMON
+[2.323s] -- looking for PCL_KDTREE
+[2.323s] -- looking for PCL_OCTREE
+[2.324s] -- looking for PCL_SEARCH
+[2.324s] -- looking for PCL_SAMPLE_CONSENSUS
+[2.324s] -- looking for PCL_FILTERS
+[2.325s] -- looking for PCL_2D
+[2.325s] -- looking for PCL_GEOMETRY
+[2.325s] -- looking for PCL_IO
+[2.325s] -- looking for PCL_FEATURES
+[2.326s] -- looking for PCL_ML
+[2.326s] -- looking for PCL_SEGMENTATION
+[2.326s] -- looking for PCL_VISUALIZATION
+[2.327s] -- looking for PCL_SURFACE
+[2.327s] -- looking for PCL_REGISTRATION
+[2.327s] -- looking for PCL_KEYPOINTS
+[2.327s] -- looking for PCL_TRACKING
+[2.328s] -- looking for PCL_RECOGNITION
+[2.328s] -- looking for PCL_STEREO
+[2.328s] -- looking for PCL_APPS
+[2.329s] -- looking for PCL_IN_HAND_SCANNER
+[2.329s] -- looking for PCL_MODELER
+[2.329s] -- looking for PCL_POINT_CLOUD_EDITOR
+[2.329s] -- looking for PCL_OUTOFCORE
+[2.330s] -- looking for PCL_PEOPLE
+[2.331s] -- Found pcl_conversions: 2.6.2 (/opt/ros/jazzy/share/pcl_conversions/cmake)
+[2.369s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found suitable version "1.83.0", minimum required is "1.70") found components: serialization filesystem thread program_options date_time timer chrono regex 
+[2.371s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.372s] -- GTSAM include directory:  /usr/local/lib/cmake/GTSAM/../../../include
+[2.375s] -- Found OpenMP: TRUE (found version "4.5")  
+[2.647s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.812s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.022s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.024s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[3.243s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[3.419s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[3.433s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.435s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.438s] -- Configured cppcheck include dirs: /home/skander/ros2_ws/src/LIO-SAM/include/lio_sam
+[3.438s] -- Configured cppcheck exclude dirs and/or files: 
+[3.442s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.442s] -- Configured cpplint exclude dirs and/or files: 
+[3.442s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.442s] -- Configured 'flake8' exclude dirs and/or files: 
+[3.444s] -- Added test 'lint_cmake' to check CMake code style
+[3.444s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.447s] -- Added test 'uncrustify' to check C / C++ code style
+[3.447s] -- Configured uncrustify additional arguments: 
+[3.448s] -- Added test 'xmllint' to check XML markup files
+[3.451s] -- Configuring done (3.4s)
+[3.609s] -- Generating done (0.1s)
+[3.633s] -- Build files have been written to: /home/skander/ros2_ws/build/lio_sam
+[3.660s] Invoked command in '/home/skander/ros2_ws/build/lio_sam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/skander/slam_ws/install/slam_diagnostic:/home/skander/slam_ws/install/sim_utils:/home/skander/slam_ws/install/match_launch:/home/skander/slam_ws/install/match_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/skander/ros2_ws/src/LIO-SAM -DCMAKE_INSTALL_PREFIX=/home/skander/ros2_ws/install/lio_sam
+[3.662s] Invoking command in '/home/skander/ros2_ws/build/lio_sam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/skander/slam_ws/install/slam_diagnostic:/home/skander/slam_ws/install/sim_utils:/home/skander/slam_ws/install/match_launch:/home/skander/slam_ws/install/match_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/skander/ros2_ws/build/lio_sam -- -j8 -l8
+[3.717s] [  1%] Built target lio_sam__rosidl_generator_type_description
+[3.725s] [  1%] Built target ament_cmake_python_symlink_lio_sam
+[3.736s] [  3%] Built target lio_sam__cpp
+[3.740s] [ 19%] Built target lio_sam__rosidl_generator_c
+[3.771s] [ 26%] Built target lio_sam__rosidl_typesupport_cpp
+[3.776s] [ 38%] Built target lio_sam__rosidl_typesupport_c
+[3.776s] [ 42%] Built target lio_sam__rosidl_typesupport_introspection_c
+[3.776s] [ 50%] Built target lio_sam__rosidl_typesupport_fastrtps_cpp
+[3.780s] [ 57%] Built target lio_sam__rosidl_typesupport_fastrtps_c
+[3.783s] [ 65%] Built target lio_sam__rosidl_typesupport_introspection_cpp
+[3.815s] [ 65%] Built target lio_sam
+[3.823s] [ 69%] Built target lio_sam_featureExtraction
+[3.824s] [ 73%] Built target lio_sam_imageProjection
+[3.825s] [ 80%] Built target lio_sam_imuPreintegration
+[3.825s] [ 80%] Built target lio_sam_mapOptimization
+[3.834s] [ 82%] Built target lio_sam__py
+[3.854s] [ 88%] Built target lio_sam__rosidl_generator_py
+[3.876s] [100%] Built target lio_sam_s__rosidl_typesupport_introspection_c
+[3.876s] [100%] Built target lio_sam_s__rosidl_typesupport_fastrtps_c
+[3.876s] [100%] Built target lio_sam_s__rosidl_typesupport_c
+[3.972s] running egg_info
+[3.997s] writing lio_sam.egg-info/PKG-INFO
+[3.997s] writing dependency_links to lio_sam.egg-info/dependency_links.txt
+[3.997s] writing top-level names to lio_sam.egg-info/top_level.txt
+[4.051s] reading manifest file 'lio_sam.egg-info/SOURCES.txt'
+[4.051s] writing manifest file 'lio_sam.egg-info/SOURCES.txt'
+[4.081s] [100%] Built target ament_cmake_python_build_lio_sam_egg
+[4.091s] Invoked command in '/home/skander/ros2_ws/build/lio_sam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/skander/slam_ws/install/slam_diagnostic:/home/skander/slam_ws/install/sim_utils:/home/skander/slam_ws/install/match_launch:/home/skander/slam_ws/install/match_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/skander/ros2_ws/build/lio_sam -- -j8 -l8
+[4.099s] Invoking command in '/home/skander/ros2_ws/build/lio_sam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/skander/slam_ws/install/slam_diagnostic:/home/skander/slam_ws/install/sim_utils:/home/skander/slam_ws/install/match_launch:/home/skander/slam_ws/install/match_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/skander/ros2_ws/build/lio_sam
+[4.105s] -- Install configuration: "Release"
+[4.106s] -- Execute custom install script
+[4.106s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/ament_index/resource_index/rosidl_interfaces/lio_sam
+[4.106s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/msg/CloudInfo.json
+[4.106s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/srv/SaveMap.json
+[4.106s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/cloud_info.h
+[4.107s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__functions.h
+[4.107s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__struct.h
+[4.107s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__type_support.h
+[4.107s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_generator_c__visibility_control.h
+[4.107s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__functions.h
+[4.107s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__struct.h
+[4.107s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__type_support.h
+[4.107s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/srv/save_map.h
+[4.108s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/environment/library_path.sh
+[4.108s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/environment/library_path.dsv
+[4.108s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_fastrtps_c.h
+[4.108s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.108s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_fastrtps_c.h
+[4.109s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_introspection_c.h
+[4.109s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.109s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_introspection_c.h
+[4.109s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/cloud_info.hpp
+[4.109s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__builder.hpp
+[4.109s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__struct.hpp
+[4.109s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__traits.hpp
+[4.110s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__type_support.hpp
+[4.110s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.110s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__builder.hpp
+[4.110s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__struct.hpp
+[4.110s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__traits.hpp
+[4.110s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__type_support.hpp
+[4.110s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/srv/save_map.hpp
+[4.111s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_fastrtps_cpp.hpp
+[4.111s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.111s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_fastrtps_cpp.hpp
+[4.111s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/msg/detail/cloud_info__rosidl_typesupport_introspection_cpp.hpp
+[4.111s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/lio_sam/srv/detail/save_map__rosidl_typesupport_introspection_cpp.hpp
+[4.111s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/environment/pythonpath.sh
+[4.111s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/environment/pythonpath.dsv
+[4.112s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam-1.0.0-py3.12.egg-info/PKG-INFO
+[4.112s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam-1.0.0-py3.12.egg-info/SOURCES.txt
+[4.112s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam-1.0.0-py3.12.egg-info/dependency_links.txt
+[4.112s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam-1.0.0-py3.12.egg-info/top_level.txt
+[4.112s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/__init__.py
+[4.113s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/_lio_sam_s.ep.rosidl_typesupport_c.c
+[4.113s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/_lio_sam_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.113s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/_lio_sam_s.ep.rosidl_typesupport_introspection_c.c
+[4.113s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/lio_sam_s__rosidl_typesupport_c.so
+[4.113s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/lio_sam_s__rosidl_typesupport_fastrtps_c.so
+[4.113s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/lio_sam_s__rosidl_typesupport_introspection_c.so
+[4.113s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/msg/__init__.py
+[4.113s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/msg/_cloud_info.py
+[4.113s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/msg/_cloud_info_s.c
+[4.113s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/srv/__init__.py
+[4.114s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/srv/_save_map.py
+[4.114s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/srv/_save_map_s.c
+[4.114s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/lio_sam_s__rosidl_typesupport_fastrtps_c.so
+[4.114s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/lio_sam_s__rosidl_typesupport_introspection_c.so
+[4.114s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/lio_sam_s__rosidl_typesupport_c.so
+[4.114s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/msg/CloudInfo.idl
+[4.115s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/srv/SaveMap.idl
+[4.115s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/msg/CloudInfo.msg
+[4.115s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/srv/SaveMap.srv
+[4.115s] -- Symlinking: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//launch/mapping_livox_sim.launch.py
+[4.122s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//launch/run.launch.py
+[4.123s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/demo.gif
+[4.123s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/device-boat.png
+[4.123s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/device-hand-2.png
+[4.123s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/device-hand.png
+[4.123s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/device-jackal.png
+[4.123s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/gps-demo.gif
+[4.123s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/imu-debug.gif
+[4.123s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/imu-transform.png
+[4.124s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/kitti-demo.gif
+[4.124s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/kitti-map.png
+[4.124s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/kitti2bag/README.md
+[4.124s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/kitti2bag/kitti2bag.py
+[4.124s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/loop-closure-2.gif
+[4.124s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/loop-closure.gif
+[4.124s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/ouster-demo.gif
+[4.124s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/ouster-device.jpg
+[4.124s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/paper.pdf
+[4.125s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/doc/system.png
+[4.125s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/params.yaml
+[4.125s] -- Symlinking: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/params_livox_sim.yaml
+[4.132s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/robot.urdf.xacro
+[4.132s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam//config/rviz2.rviz
+[4.132s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/lio_sam/lio_sam_featureExtraction
+[4.132s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/lio_sam/lio_sam_imageProjection
+[4.132s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/lio_sam/lio_sam_imuPreintegration
+[4.132s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/lib/lio_sam/lio_sam_mapOptimization
+[4.133s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/include/lio_sam/utility.hpp
+[4.133s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/ament_index/resource_index/package_run_dependencies/lio_sam
+[4.133s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/ament_index/resource_index/parent_prefix_path/lio_sam
+[4.133s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/environment/ament_prefix_path.sh
+[4.133s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/environment/ament_prefix_path.dsv
+[4.133s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/environment/path.sh
+[4.134s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/environment/path.dsv
+[4.134s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/local_setup.bash
+[4.134s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/local_setup.sh
+[4.134s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/local_setup.zsh
+[4.134s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/local_setup.dsv
+[4.134s] -- Symlinking: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/package.dsv
+[4.141s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/ament_index/resource_index/packages/lio_sam
+[4.142s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/rosidl_cmake-extras.cmake
+[4.142s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.142s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.142s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_libraries-extras.cmake
+[4.142s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/ament_cmake_export_targets-extras.cmake
+[4.142s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.142s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.143s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/lio_samConfig.cmake
+[4.143s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/lio_samConfig-version.cmake
+[4.143s] -- Up-to-date symlink: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/package.xml
+[4.143s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/lib/liblio_sam__rosidl_generator_c.so
+[4.143s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/lib/liblio_sam__rosidl_typesupport_fastrtps_c.so
+[4.143s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/lib/liblio_sam__rosidl_typesupport_introspection_c.so
+[4.144s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/lib/liblio_sam__rosidl_typesupport_c.so
+[4.144s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/lib/liblio_sam__rosidl_typesupport_fastrtps_cpp.so
+[4.144s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/lib/liblio_sam__rosidl_typesupport_introspection_cpp.so
+[4.144s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/lib/liblio_sam__rosidl_typesupport_cpp.so
+[4.173s] Listing '/home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam'...
+[4.173s] Compiling '/home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/__init__.py'...
+[4.173s] Listing '/home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/msg'...
+[4.173s] Listing '/home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages/lio_sam/srv'...
+[4.177s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/lib/liblio_sam__rosidl_generator_py.so
+[4.177s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_cExport.cmake
+[4.177s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_cExport-release.cmake
+[4.177s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cExport.cmake
+[4.178s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cExport-release.cmake
+[4.178s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cExport.cmake
+[4.178s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cExport-release.cmake
+[4.178s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cExport.cmake
+[4.178s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cExport-release.cmake
+[4.178s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_cppExport.cmake
+[4.178s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.178s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[4.178s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cppExport.cmake
+[4.178s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_introspection_cppExport-release.cmake
+[4.178s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cppExport.cmake
+[4.178s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/lio_sam__rosidl_typesupport_cppExport-release.cmake
+[4.179s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_pyExport.cmake
+[4.179s] -- Up-to-date: /home/skander/ros2_ws/install/lio_sam/share/lio_sam/cmake/export_lio_sam__rosidl_generator_pyExport-release.cmake
+[4.180s] Invoked command in '/home/skander/ros2_ws/build/lio_sam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/skander/slam_ws/install/slam_diagnostic:/home/skander/slam_ws/install/sim_utils:/home/skander/slam_ws/install/match_launch:/home/skander/slam_ws/install/match_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/skander/ros2_ws/build/lio_sam

@@ -1,0 +1,28 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/slam_diagnostic/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/sim_utils/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/ros_gz_sim/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/ros_gz_bridge/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/ros_gz_interfaces/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/match_launch/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/match_control/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/fast_lio/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/livox_ros_driver2/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/skander/ros2_ws/install/lio_sam/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/slam_diagnostic/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/sim_utils/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/ros_gz_sim/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/ros_gz_bridge/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/ros_gz_interfaces/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/match_launch/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/match_control/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/fast_lio/lib/python3.12/site-packages",
+        "/home/skander/slam_ws/install/livox_ros_driver2/lib/python3.12/site-packages",
+        "/opt/ros/jazzy/lib/python3.12/site-packages"
+    ]
+}

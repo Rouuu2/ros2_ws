@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/skander/ros2_ws/install/lio_sam/include/**",
+        "/home/skander/slam_ws/install/ros_gz_sim/include/**",
+        "/home/skander/slam_ws/install/ros_gz_bridge/include/**",
+        "/home/skander/slam_ws/install/ros_gz_interfaces/include/**",
+        "/home/skander/slam_ws/install/fast_lio/include/**",
+        "/home/skander/slam_ws/install/livox_ros_driver2/include/**",
+        "/opt/ros/jazzy/include/**",
+        "/home/skander/ros2_ws/src/LIO-SAM/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
